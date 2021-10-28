@@ -128,7 +128,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    left: -600px;
+    left: -2000px;
     background: var(--mainColor);
     padding: 40px 0;
     transition: left 0.4s ease-in-out;
@@ -148,3 +148,77 @@ header {
 }
 
 /* header */
+
+
+/* banner */
+.banner {
+  padding: 250px 0;
+  background-image: url('../images/banner-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display:grid;
+  place-items:center;
+}
+.banner__content {
+  width: 70%;
+  color: var(--white)
+}
+.banner__content h2 {
+  font-size:32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align:center;
+  margin-bottom: 50px;
+}
+
+.banner .search__text {
+  display: flex;
+  gap: 15px;
+  padding: 0 40px;
+}
+.banner .search__text input{
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 14px 10px;
+}
+.banner .search__text input::placeholder {
+  color: var(--white)
+}
+.banner .search__text button{
+  padding: 0 24px;
+  background-color: var(--mainColor);
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.banner .checkboxes{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap:wrap;
+  margin: 20px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .banner__content  {
+    width: 100%
+  }
+  .banner__content h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+  .banner .search__text button {
+    padding: 0 16px;
+    font-size: 14px
+  }
+  .banner .checkboxes {
+    padding: 0 14px
+  }
+}
+
+
+/* banner */
