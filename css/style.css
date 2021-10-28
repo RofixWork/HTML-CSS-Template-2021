@@ -108,9 +108,13 @@ header {
 .toggle__nav label::before {
   content: "\f0c9";
   font-family: "FontAwesome";
-  font-size: 32px;
+  font-size: 30px;
   color: var(--colorLinks);
   cursor: pointer;
+  display: none;
+}
+
+.header__content input[type="checkbox"] {
   display: none;
 }
 
@@ -122,9 +126,10 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    left: 0;
+    left: -600px;
     background: var(--mainColor);
     padding: 40px 0;
+    transition: left 0.4s ease-in-out;
   }
   .header__content nav a {
     color: white;
@@ -132,6 +137,11 @@ header {
 
   .toggle__nav label::before {
     display: block;
+  }
+
+  .header__content input[type="checkbox"]:checked + nav {
+    left: 0;
+    transition: left 0.4s ease-in-out;
   }
 }
 
