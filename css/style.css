@@ -71,7 +71,9 @@ header {
 
 .header__content nav {
   display: flex;
-  gap: 20px;
+  gap: 35px;
+  flex: 1;
+  justify-content: center;
 }
 .header__content nav a {
   color: var(--colorLinks);
