@@ -1,0 +1,106 @@
+/*general styles*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+/*general styles*/
+
+/* Variables */
+:root {
+  --mainColor: #00bcd4;
+  --white: #fff;
+  --colorLinks: #1e1e1e;
+}
+/* Variables */
+
+/*Container*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*Container*/
+
+body {
+  overflow-x: hidden;
+}
+
+/* header */
+header {
+  padding: 15px 0;
+  background-color: white;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content .logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header__content .logo span {
+  font-size: 16px;
+}
+
+.header__content nav {
+  display: flex;
+  gap: 20px;
+}
+.header__content nav a {
+  color: var(--colorLinks);
+  font-size: 15px;
+  transition: color 0.4s ease-in-out;
+}
+.header__content nav a:hover {
+  color: var(--mainColor);
+  transition: color 0.4s ease-in-out;
+}
+
+.buttons button {
+  padding: 6px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.buttons button:first-of-type {
+  border: 2px solid var(--mainColor);
+  color: var(--mainColor);
+  background-color: white;
+}
+.buttons button:first-of-type:hover {
+  border: 2px solid var(--mainColor);
+  color: var(--white);
+  background-color: var(--mainColor);
+}
+.buttons button:last-of-type {
+  border: 2px solid var(--mainColor);
+  color: var(--white);
+  background-color: var(--mainColor);
+}
+/* header */
