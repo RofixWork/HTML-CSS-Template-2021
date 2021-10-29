@@ -47,13 +47,18 @@ input:focus {
 
 body {
   overflow-x: hidden;
+  height: 5000px;
 }
 
 /* header */
 header {
   padding: 15px 0;
   background-color: white;
-  position: relative;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 .header__content {
   display: flex;
@@ -152,7 +157,7 @@ header {
 
 /* banner */
 .banner {
-  padding: 250px 0;
+  padding: 300px 0;
   background-image: url('../images/banner-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,3 +227,31 @@ header {
 
 
 /* banner */
+
+/* trusted */
+.trusted {
+  background-color : #f7f7f7;
+  padding: 40px 0;
+}
+.trusted .title {
+  text-align:center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.trusted__images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .trusted__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .trusted__images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* trusted */
