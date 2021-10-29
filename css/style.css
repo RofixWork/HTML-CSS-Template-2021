@@ -125,7 +125,7 @@ header {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .header__content nav {
     position: absolute;
     top: 60px;
@@ -242,16 +242,24 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  text-align: center;
+  text-align:center;
 }
+
 @media (max-width: 991px) {
   .trusted__images {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+
   }
 }
 @media (max-width: 768px) {
   .trusted__images {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+
+  }
+  .trusted .title {
+    font-size: 16px;
   }
 }
 /* trusted */
