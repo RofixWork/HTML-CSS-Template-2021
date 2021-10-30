@@ -351,7 +351,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 500px;
   z-index: -1;
 
 }
@@ -451,6 +451,33 @@ header {
 }
 .cloud__box:nth-of-type(2) button {
   background: linear-gradient(145deg, rgba(114,2,187,1) 0%, rgba(50,100,245,1) 100%)
+}
+
+@media (max-width: 991px) {
+  .cloud__boxes {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+  }
+  .cloud__box ul li  {
+    justify-content:center;
+  }
+}
+@media (max-width: 768px) {
+  .cloud__boxes {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 35px;
+  }
+
+  .cloud__content {
+    width: 90%;
+  }
+   .cloud__content h3{
+     font-size: 25px;
+   }
+
+   .cloud__box  {
+     padding: 30px 25px;
+   }
 }
 
 
