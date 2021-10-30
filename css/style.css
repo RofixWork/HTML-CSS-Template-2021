@@ -44,6 +44,12 @@ input:focus {
   padding: 0 15px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /*Container*/
 
 body {
@@ -61,6 +67,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 9999;
+  box-shadow: 0 0 20px rgba(0,0,0,.4)
 }
 .header__content {
   display: flex;
@@ -292,9 +299,10 @@ header {
   gap:15px;
 }
 .services__boxes .service__box {
-  padding: 40px 50px;
+  padding:  50px 40px;
   text-align:center;
   background-color: #f7f7f7;
+  border-radius: 5px;
 }
 .services__boxes .service__box i {
   width: 100px;
@@ -313,4 +321,137 @@ header {
   font-size: 15px;
   color: #6a6a6a;
 }
+
+@media (max-width: 991px) {
+  .services__boxes  {
+  grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+@media (max-width: 768px) {
+  .services__boxes  {
+  grid-template-columns: repeat(1, 1fr);
+
+  }
+}
 /* services */
+
+/* CLOUD */
+
+.cloud {
+  position: relative;
+}
+
+.cloud__background {
+  background-image: url('../images/pricing-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+
+}
+
+.cloud__content {
+  width: 60%;
+  margin: 0 auto;
+  padding :80px 0;
+  text-align: center;
+  color: var(--white)
+}
+.cloud__content h3{
+  font-size: 32px;
+}
+.cloud__content p{
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.cloud__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.cloud__box {
+  padding: 50px 40px;
+  text-align:center;
+  box-shadow: 0 0 2px rgba(0,0,0,.4);
+  position: relative;
+  background-color: var(--white);
+}
+
+
+.cloud__box h3 {
+  margin-bottom: 45px;
+  font-size: 17px;
+}
+.cloud__price  {
+  background-color: var(--mainColor);
+  color:var(--white);
+  padding: 30px;
+}
+.cloud__price h4 {
+  font-size: 32px;
+}
+.cloud__price span{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cloud__box:nth-of-type(2) .cloud__price {
+  background: linear-gradient(145deg, rgba(114,2,187,1) 0%, rgba(50,100,245,1) 100%)
+}
+
+
+.cloud__box .cloud__desc {
+  font-size: 14px;
+  color: #6a6a6a;
+  margin: 30px 0 0 0;
+}
+.cloud__box .cloud__border {
+  margin: 35px 0;
+  background-color: #eee;
+  height:.7px;
+  border: none;
+
+}
+
+.cloud__box ul li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 14px 0;
+}
+.cloud__box ul li i {
+  color: #491bb1;
+  font-size: 14px
+}
+.cloud__box ul li p {
+  color: #6a6a6a;
+  font-size: 15px;
+}
+
+.cloud__box button {
+  padding: 10px 15px;
+  background-color: var(--mainColor);
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cloud__box:nth-of-type(2) button {
+  background: linear-gradient(145deg, rgba(114,2,187,1) 0%, rgba(50,100,245,1) 100%)
+}
+
+
+/* CLOUD */
