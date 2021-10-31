@@ -482,3 +482,53 @@ header {
 
 
 /* CLOUD */
+
+/* features */
+.features {
+  padding: 140px 0 0 0;
+}
+
+.feat__heading {
+  text-align:center;
+  margin-bottom: 80px;
+}
+.feat__heading span{
+  color: var(--mainColor);
+  font-size: 15px;
+  font-weight: 700;
+}
+.feat__heading h3{
+  font-size: 32px;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+}
+.feat__boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.feat__boxes .feat__box {
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  border-radius: 5px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.feat__box .feat__content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.feat__box .feat__content p {
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .feat__boxes {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+/* features */
