@@ -649,4 +649,12 @@ footer {
   opacity: .7;
   transition: opacity .4s ease-in-out
 }
+
+
+@media (max-width:768px) {
+  .footer__boxes {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 30px
+  }
+}
 /* footer */
