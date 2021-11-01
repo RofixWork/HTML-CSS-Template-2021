@@ -606,3 +606,47 @@ header {
   opacity: 1;
 }
 /* testimonials */
+
+/* footer */
+footer {
+  padding: 140px 0;
+  background-image : url('../images/footer-bg.jpg');
+  background-size:cover;
+  background-position : center;
+}
+
+.footer__boxes {
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  gap: 15px;
+  color: var(--white);
+}
+
+.footer__box h3{
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.footer__box p{
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer__box ul {
+  display: flex;
+  flex-direction : column;
+  gap: 6px;
+}
+.footer__box ul li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  transition: opacity .4s ease-in-out;
+}
+.footer__box ul li span {
+  font-size: 15px;
+}
+.footer__box ul li a:hover {
+  opacity: .7;
+  transition: opacity .4s ease-in-out
+}
+/* footer */
